@@ -3,7 +3,7 @@
  * For instance, let's say we've got a set of numbers [2, 5, 8, 14, 0] and N = 10, the resulting subset should be [2, 8].
  */
 function subSetNumbers(items: number[], n: number): number[] {
-  const map = new Map();
+  const map = new Map<string, number>();
   for (const item of items) {
     const v = n - item;
     if (map.has(String(item))) {
